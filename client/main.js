@@ -36,7 +36,11 @@ const signUp = (event) => {
   axios
     .post(`${baseUrl}/signup`, postBody)
     .then((res) => {
-      console.log(res.data);
+      alert(
+        res.data.success
+          ? 'You made an account! Now log in.'
+          : 'Something went wrong.'
+      );
     })
     .catch((error) => {
       console.log(error);
