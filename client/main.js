@@ -8,7 +8,7 @@ let passwordSignup = document.getElementById('password-signup');
 let firstNameSignup = document.getElementById('first-name-signup');
 let lastNameSignup = document.getElementById('last-name-signup');
 
-const baseUrl = '';
+const baseUrl = 'http://localhost:4000';
 
 const logIn = (event) => {
   event.preventDefault();
