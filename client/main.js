@@ -19,7 +19,7 @@ const logIn = (event) => {
   axios
     .post(`${baseUrl}/login`, postBody)
     .then((res) => {
-      console.log(res.data);
+      alert(res.data.success ? `${res.data.fortune}` : `${res.data.message}`);
     })
     .catch((error) => {
       console.log(error);
